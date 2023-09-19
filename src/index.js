@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; // Import from 'react-dom'
-
-
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import EventHandling from './EventHandling';
 
 ReactDOM.render(
-  <App />, // You don't need the additional wrapping <>
+  <EventHandling />,
   document.getElementById('root')
 );
+
