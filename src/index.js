@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import EventHandling from './EventHandling';
+import Form from './Form';
 
 ReactDOM.render(
-  <EventHandling />,
+  <Form/>,
   document.getElementById('root')
 );
 

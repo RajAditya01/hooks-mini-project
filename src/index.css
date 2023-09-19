@@ -75,6 +75,8 @@ button {
 
 
 /* Forms in React */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Roboto+Mono&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
