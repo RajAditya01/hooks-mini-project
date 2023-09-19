@@ -1,13 +1,28 @@
 import React from "react";
+import { useState } from "react";
 
-const Form = ()=>{
+const Form = () => {
+    let [inputValue, setValue] = useState(" ")
+
+    const inputEvent = (event) => {
+        // console.log(event.target.value)
+        inputValue = event.target.value
+    }
+
+    const Submit = () => {
+        setValue(inputValue)
+    }
     return (
         <>
-        <div>
-            <h1>Hello</h1>
-            <input type="text" placeholder="Enter your Name"></input>
-            <button>Click Me 👍</button>
-        </div>
+            <div className="Dcontainer">
+                <h1 className="heading"> Hello, {inputValue}</h1>
+                <input
+                    type="text"
+                    style={{ height: "50px", width: "350px", marginBottom: "20px", textAlign: 'center' }}
+                    placeholder="Enter Your Name" onChange={inputEvent}
+                />
+                <button className="primary__btn" onClick={Submit}>Submit</button>
+            </div>
         </>
     );
 };
